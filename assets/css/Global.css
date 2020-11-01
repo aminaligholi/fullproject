@@ -1,0 +1,23 @@
+@import '@/node_modules/sahel-font/dist/font-face.css';
+@import'../../node_modules/parastoo-font/dist/font-face.css';
+@import'../../node_modules/vazir-font/dist/font-face.css';
+@font-face {
+    font-family: iran-r;
+    src: url(~assets/fonts/IRANSansWebMedium.woff);
+}
+
+.iran {
+    font-family: 'iran-r';
+}
+
+.sahel {
+    font-family: 'Sahel';
+}
+
+.parastoo {
+    font-family: 'Parastoo';
+}
+
+.vazir {
+    font-family: 'Vazir';
+}
