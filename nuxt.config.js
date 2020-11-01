@@ -45,7 +45,8 @@ export default {
 
     // Axios module configuration (https://go.nuxtjs.dev/config-axios)
     axios: {
-        baseURL: "https://jsonplaceholder.typicode.com/photos"
+        baseURL: "https://jsonplaceholder.typicode.com/posts"
+        // baseURL: "https://nuxttest-ac314.firebaseio.com/post"
     },
 
     // Build Configuration (https://go.nuxtjs.dev/config-build)
