@@ -15,7 +15,8 @@
     "parastoo-font": "^2.0.1",
     "persian-number-js": "^0.4.0",
     "sahel-font": "^3.4.0",
-    "vazir-font": "^26.0.2"
+    "vazir-font": "^26.0.2",
+    "vue-content-loading": "^1.6.0"
   },
   "devDependencies": {}
 }
