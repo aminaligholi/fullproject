@@ -1,33 +1,32 @@
 <template>
-    <div class="row">
-     <card v-for="video in videos" :key="video.id"
-     :video="video"
-     >
-      <client-only>
-      <itemLoading></itemLoading>
-      </client-only>
-     </card>
-  </div>
+<div class="row">
+    <card v-for="video in videos" :key="video.id" :video="video">
+        <client-only>
+            <itemLoading></itemLoading>
+        </client-only>
+    </card>
+</div>
 </template>
 
 <script>
 import itemLoading from '@/components/itemLoading'
 import card from '@/components/card'
-import {mapState} from 'vuex'
-  export default {
-    components:{
-      card,itemLoading
+import { mapState } from 'vuex'
+export default {
+    components: {
+        card,
+        itemLoading
     },
 
     head: {
-      title: "list user name "
+        title: "list user name "
     },
-    async fetch({store})
-     {
-      await store.dispatch('allvideos')
+    async fetch({ store, from }) {
+            await store.dispatch('allvideos', { paylo: '' })
+        
     },
-    computed:{
-      ...mapState(['videos'])
+    computed: {
+        ...mapState(['videos'])
     }
     // async asyncData({
     //   $axios
@@ -39,7 +38,7 @@ import {mapState} from 'vuex'
     //     videos
     //   }
     // },
-  }
+}
 </script>
 
 <style>

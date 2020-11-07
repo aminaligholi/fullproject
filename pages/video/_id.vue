@@ -14,8 +14,8 @@ export default {
         }
     },
     async fetch({store,params}) {
-        await store.dispatch('get_one', {
-            id: params.id
+        await store.dispatch('allvideos', {
+            paylo: params.id
         })
     },
     computed:{

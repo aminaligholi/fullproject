@@ -13,7 +13,7 @@ export default {
   async fetch({
       store , params
     }) {
-      await store.dispatch('get_cat', {cat:params.cat} )
+      await store.dispatch('allvideos', {paylo:`?userId=${params.cat}`} )
     },
     computed:{
       ...mapState(['videos'])
