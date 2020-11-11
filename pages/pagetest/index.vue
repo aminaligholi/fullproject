@@ -1,26 +1,24 @@
 <template>
   <div>
-      <section >
-          <h1>random</h1>
+      <section v-focus>
+          <h1 >random</h1>
       </section>
   </div>
+ 
 </template>
 
 <script>
 
-export default{
+export default {
 
-
-
-}
-
+    }
 </script>
 
 <style scoped>
  section{
      width: 100%;
      height: 100vh;
-     /* background-image: url("../../assets/4.jpg"); */
+ /* background-color: green; */
      display: flex;
      justify-content: center;
      align-items: center; 

@@ -29,7 +29,9 @@ export default {
     ],
 
     // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-    plugins: [],
+    plugins: [
+        '@/plugins/directives.js'
+    ],
 
     // Auto import components (https://go.nuxtjs.dev/config-components)
     components: true,
@@ -43,6 +45,16 @@ export default {
         '@nuxtjs/axios',
         '@nuxtjs/auth'
     ],
+    // render: {
+    //     bundleRenderer: {
+    //       directives: {
+    //         cww: function (el, dir) {
+    //           const style = el.data.style = {}
+    //           style.backgroundColor = 'black'
+    //         }
+    //       }
+    //     }
+    //   },
 
     // Axios module configuration (https://go.nuxtjs.dev/config-axios)
     axios: {
